@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import Navbar from "@/components/Navbar";
 
 const afacadFlux = localFont({
   src: "./fonts/AfacadFlux.ttf",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={`${afacadFlux.variable} ${poppins.className} antialiased`}
       >
+        <Navbar />
         {children}
         <Toaster richColors/>
       </body>

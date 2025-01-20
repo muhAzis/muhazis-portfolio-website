@@ -34,14 +34,14 @@ const Hero = () => {
   }
   
   return (
-    <div className='relative w-full min-h-[100vh] p-5 md:p-20 grid grid-cols-3 gap-20 bg-twilight-500 items-center justify-between'>
+    <div className='relative w-full min-h-[100vh] p-5 md:p-20 grid grid-cols-1 md:grid-cols-3 gap-20 bg-twilight-500 items-center justify-between'>
       <div className='absolute w-full top-1/2 left-0 -translate-y-1/2'>
         <Marquee speed={200} gradient={false}>
           <p className='mr-10 text-twilight-900 text-[400px] font-bold opacity-10 cursor-default'>Website Frontend Developer - Graphic Designer - </p>
         </Marquee>
       </div>
       
-      <div className='flex col-span-1 drop-shadow-lg items-center justify-center'>
+      <div className='flex col-span-1 h-[100vh] md:h-fit drop-shadow-lg items-center justify-center'>
         <div className='flex flex-col max-w-[350px] gap-4'>
           <div className='flex gap-4 items-center'>
             <HoverCard>
@@ -78,7 +78,7 @@ const Hero = () => {
                 </div>
                 
                 <CopyCard
-                  className='bg-white/5 border-0 text-white backdrop-blur-none'
+                  className='bg-white/5 !border-0 text-white backdrop-blur-none'
                   title='Contact me!'
                   subtitle='muhabdulazis555@gmail.com'
                   copyContent='muhabdulazis555@gmail.com'
@@ -144,7 +144,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='flex h-full max-h-[600px] col-span-1 items-center justify-center'>
+      <div className='flex h-[100vh] md:h-fit col-span-1 items-center justify-center'>
         <div className='flex flex-col w-full max-w-[350px] h-fit py-8 px-6 gap-4 text-white rounded-lg'>
           {/* <p className='w-full text-center text-2xl font-bold'>My Specialization</p>
           <p className='w-full text-center mb-2'>These are some skills that I oftenly practice and implement when I working on a poject</p>
@@ -178,8 +178,8 @@ const Hero = () => {
             </div>
           </div> */}
 
-          <p className='w-full text-center text-2xl font-bold'>Get in touch with me!</p>
-          <p className='w-full text-center mb-2'>Interested in my skills and wanted to discuss your next amazing project? You can find me here</p>
+          <p className='w-full text-center text-2xl font-bold drop-shadow-lg'>Get in touch with me!</p>
+          <p className='w-full text-center mb-2 drop-shadow-lg'>Interested in my skills and wanted to discuss your next amazing project? You can find me here</p>
 
           <CopyCard
             title='Whatsapp'
@@ -197,6 +197,12 @@ const Hero = () => {
             copyMessage='Email copied to clipboard'
             permalink='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmZlJNRsBnwGvJNzhfmjLckspRplvMNMjNlZBWdJjXnKMMhVWFQVzGhcCnQfjVBZcfnQB'
           />
+
+          <hr />
+
+          <p className='w-full text-end text-2xl font-bold drop-shadow-lg'>
+            Feel free to <span className='font-bold text-golden-300'>contact me</span>, I'm always open to <span className='font-bold text-golden-300'>discuss new projects</span>, <span className='font-bold text-golden-300'>creative ideas</span> or <span className='font-bold text-golden-300'>opportunities</span> to be part of <span className='font-bold text-golden-300'>your visions</span>.
+          </p>
         </div>
       </div>
     </div>
